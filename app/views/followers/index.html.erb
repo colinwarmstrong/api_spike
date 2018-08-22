@@ -1,7 +1,10 @@
 <h2><%= current_user.name %>'s Followers</h2>
-<%= @github_followers.each do |follower| %>
+
+<% @followers.each do |follower| %>
   <div class='follower'>
-    <p><%= follower.login %></p>
-    <img src="<%= follower.image %>"  alt="profile pic">
+    <p class='follower-login'><%= follower.login %></p>
+    <img src="<%= follower.image %>"  alt="profile pic" class='follower-image'>
   </div>
 <% end %>
+
+<%= link_to '<< Back to Profile', root_path %>

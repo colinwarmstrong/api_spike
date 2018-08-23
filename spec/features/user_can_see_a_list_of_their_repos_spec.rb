@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'A user' do
+describe 'An authorized user' do
   context 'visiting /' do
     it 'sees a list of all their repos' do
       user = create(:user)
@@ -27,7 +27,7 @@ describe 'A user' do
         expect(page).to have_content('A condensed REPL version of the board game Battleship that runs in the terminal.')
         expect(page).to have_content('Language: Ruby')
         expect(page).to have_content('Forks: 0')
-        expect(page).to have_content('Last Updated On 06/10/2018')
+        expect(page).to have_content('Last updated on 06/10/2018')
       end
     end
   end

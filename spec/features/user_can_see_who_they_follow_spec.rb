@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'A user' do
+describe 'An authorized user' do
   context 'visiting /following' do
     it 'sees a list of all users they follow' do
       user = create(:user)

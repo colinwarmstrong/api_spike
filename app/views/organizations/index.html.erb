@@ -1,0 +1,8 @@
+<h2>Organizations</h2>
+
+<% @organizations.each do |organization| %>
+  <div class="organization">
+    <h3><%= organization.name %></h3>
+    <img src="<%= organization.image %>" alt="organization pic">
+  </div>
+<% end %>

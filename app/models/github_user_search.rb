@@ -21,6 +21,12 @@ class GithubUserSearch
     end
   end
 
+  def organizations
+    @service.api_call('orgs').map do |raw_organization_info|
+      Organization.new(raw_organization_info)
+    end
+  end
+
   def starred_repos
     @service.api_call('starred').count
   end

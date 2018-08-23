@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'A user' do
+describe 'An authorized user' do
   context 'visiting /' do
     it 'sees the number of starred repos for the user' do
       user = create(:user)

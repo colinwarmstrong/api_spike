@@ -2,7 +2,9 @@
   <h2><%= "Welcome #{current_user.name}" %></h2>
   <img src="<%= current_user.image %>" alt="">
   <p><%= link_to 'Followers', followers_path %></p>
+  <p><%= link_to 'Logout', signout_path %></p>
   <p><%= link_to 'Following', following_path %></p>
+  <p><%= link_to 'Repos', repos_path %></p>
   <h4 class='starred-repos'>Number of Starred Repos: <%= @starred_repos %></h4>
   <p><%= link_to 'Logout', signout_path %></p>
 <% else %>

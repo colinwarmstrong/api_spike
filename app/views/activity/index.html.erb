@@ -1,0 +1,11 @@
+<h2>Recent Activity</h2>
+
+<% @recent_commits.each do |commit| %>
+  <div class="commit">
+    <p>On <%= commit.created_at.strftime('%B %d, %Y') %>, <%= commit.author %> added a commit to <%= commit.repo %>:</p>
+    <p>"<%= commit.message %>"</p>
+    <br>
+  </div>
+<% end %>
+
+<%= link_to '<< Back to Profile', root_path %>

@@ -1,0 +1,14 @@
+<h2>Repos</h2>
+
+<% @repos.each do |repo| %>
+  <div class='repo'>
+    <h3><%= repo.name %></h3>
+    <p><%= repo.description %></p>
+    <p>Language: <%= repo.language %> </p>
+    <p>Forks: <%= repo.forks_count %> </p>
+    <p>Last updated on <%= repo.updated_at.strftime('%m/%d/%Y') %></p>
+    <br>
+  </div>
+<% end %>
+
+<p><%= link_to '<< Back to Profile', root_path %></p>

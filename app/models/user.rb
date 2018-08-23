@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  validates_presence_of :provider, :uid, :name, :token, :login
+
 
   def self.create_with_omniauth(auth)
     create! do |user|

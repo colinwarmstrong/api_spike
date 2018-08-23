@@ -12,7 +12,7 @@ describe 'An authorized user' do
          'Accept'=>'*/*',
          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
 
-         'Authorization'=>'token abc5ca1ae648f4ece58d9926c459f5dcabac848e',
+         'Authorization'=>"token #{ENV['TEST_TOKEN']}",
          'User-Agent'=>'Faraday v0.12.2'
           }).
         to_return(status: 200, body: File.read('./spec/mock_responses/repos.json'), headers: {})

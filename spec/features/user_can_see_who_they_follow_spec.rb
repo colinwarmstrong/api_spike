@@ -15,7 +15,7 @@ describe 'An authorized user' do
          'Authorization'=>"token #{ENV['TEST_TOKEN']}",
          'User-Agent'=>'Faraday v0.12.2'
           }).
-        to_return(status: 200, body: File.read('./spec/mock_responses/following.json'), headers: {})
+        to_return(status: 200, body: File.read('./spec/fixtures/following.json'), headers: {})
 
       visit following_path
 

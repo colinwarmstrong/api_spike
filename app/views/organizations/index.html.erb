@@ -1,8 +1,14 @@
 <h2>Organizations</h2>
 
-<% @organizations.each do |organization| %>
-  <div class="organization">
-    <h3><%= organization.name %></h3>
-    <img src="<%= organization.image %>" alt="organization pic">
-  </div>
+<% if @organizations.empty? %>
+  <p>You are not a part of any organizations at this time.</p>
+<% else %>
+  <% @organizations.each do |organization| %>
+    <div class="organization">
+      <h3><%= organization.name %></h3>
+      <img src="<%= organization.image %>" alt="organization pic">
+    </div>
+  <% end %>
 <% end %>
+
+<p><%= link_to '<< Back to Profile', root_path %></p>

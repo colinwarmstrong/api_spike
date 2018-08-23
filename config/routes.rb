@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/following', to: 'following#index', as: :following
   get '/repos', to: 'repos#index', as: :repos
   get '/orgs', to: 'organizations#index', as: :organizations
+  get '/activity', to: 'activity#index', as: :activity
 end

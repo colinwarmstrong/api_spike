@@ -15,6 +15,12 @@ class GithubUserSearch
     end
   end
 
+  def repos
+    @service.api_call('repos').map do |raw_repo_info|
+      Repo.new(raw_repo_info)
+    end
+  end
+
   def starred_repos
     @service.api_call('starred').count
   end

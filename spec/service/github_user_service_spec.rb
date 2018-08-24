@@ -30,7 +30,7 @@ describe GithubUserService, type: :model do
       repos = github_user_service.api_call(endpoint)
       repo = repos.first
 
-      expect(repos).to be_a(Array)
+      expect(repos).to be_an(Array)
       expect(repo).to be_a(Hash)
     end
   end

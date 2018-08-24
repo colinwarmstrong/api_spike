@@ -46,4 +46,12 @@ class GithubUserSearch
     end.flatten
     commits.shift(25)
   end
+
+  def following_events
+    received_events = @service.api_call('received_events')
+    events = received_events.map do |event_info|
+      FollowingEvent.new(event_info)
+    end
+    events.shift(25)
+  end
 end

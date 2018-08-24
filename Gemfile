@@ -14,14 +14,14 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'omniauth-github'
 gem 'figaro'
+gem 'bootstrap'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'pry'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
   gem 'simplecov'
-  gem 'capybara'
   gem 'factory_bot_rails'
 end
 
@@ -32,6 +32,9 @@ end
 
 group :test do
   gem 'webmock'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

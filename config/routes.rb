@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/repos', to: 'repos#index', as: :repos
   get '/orgs', to: 'organizations#index', as: :organizations
   get '/activity', to: 'activity#index', as: :activity
+  get '/following_activity', to: 'following_activity#index', as: :following_activity
 end

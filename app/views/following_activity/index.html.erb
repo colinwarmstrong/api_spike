@@ -1,0 +1,11 @@
+<h2>Recent Activity</h2>
+
+<% @events.each do |event| %>
+  <div class="event">
+    <p><%= event.login %> <%= event.verb %> the repository <%= event.repo %> on <%= event.created_at.strftime('%B %d, %Y') %></p>
+    <img src="<%= event.image %>" alt="profile pic">
+    <br>
+  </div>
+<% end %>
+
+<%= link_to '<< Back to Profile', root_path %>

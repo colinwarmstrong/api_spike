@@ -1,0 +1,10 @@
+<h2>Following</h2>
+
+<% @followings.each do |following| %>
+  <div class="following">
+    <p class='following-login'><%= following.login %></p>
+    <img src="<%= following.image %>" alt="profile pic" class='following-image'>
+  </div>
+<% end %>
+
+<%= link_to '<< Back to Profile', root_path %>

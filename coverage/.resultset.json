@@ -1,0 +1,47 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/models/user.rb": [
+        1,
+        null
+      ],
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/colinarmstrong/Turing/mod3/api_curious/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1545090287
+  }
+}
